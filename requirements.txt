@@ -1,0 +1,8 @@
+langgraph
+mcp
+pydantic
+pydantic-settings
+python-dotenv
+pytest
+pytest-asyncio
+ruff
