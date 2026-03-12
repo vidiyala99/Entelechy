@@ -20,6 +20,7 @@ class TaskNode(BaseModel):
     assigned_agent: Optional[str] = None
 
 class AgentPlan(BaseModel):
+    id: str = "plan_1"
     goal: str
     dag: List[TaskNode] = []
     created_at: datetime = Field(default_factory=datetime.now)

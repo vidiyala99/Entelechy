@@ -17,6 +17,11 @@ async def test_mcp_client_tool_call():
 async def test_worker_processing():
     client = MCPClient("http://mock-mcp-server")
     worker = Worker("worker_1", client)
+    
+    # Authorize tools for the test worker
+    worker.control_plane.add_policy("Agent::\"worker_1\"", "Action::\"google_search\"", "Resource::\"web\"")
+    worker.control_plane.add_policy("Agent::\"worker_1\"", "Action::\"read_file\"", "Resource::\"data.txt\"")
+    
     task = TaskNode(id="t_exec_1", description="Search for agentic os")
     AgentStateMachine.transition(task, AgentState.PLANNING)
     

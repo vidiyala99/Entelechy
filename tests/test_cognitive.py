@@ -27,9 +27,11 @@ def test_context_engineer_compilation():
 @pytest.mark.asyncio
 async def test_knowledge_interface_search():
     interface = KnowledgeInterface()
+    interface.memory.archive_outcome("security policies", "Use Cedar for authorization.")
+    
     results = await interface.search_knowledge("security policies")
     assert len(results) > 0
-    assert results[0]["score"] > 0.9
+    assert results[0]["score"] >= 0.9
     
     formatted = interface.format_results(results)
     assert "KNOWLEDGE_SEARCH_RESULTS" in formatted

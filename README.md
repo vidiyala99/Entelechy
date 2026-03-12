@@ -1,6 +1,6 @@
-# Entelechy: Agentic Operating System (2026 Production Standard)
+# Entelechy# Entelechy: Agentic Operating System (2026 Production Standard)
 
-A production-grade Entelechy architecture for orchestrating Intent-to-Outcome workflows.
+A production-grade Agentic Operating System architecture for orchestrating Intent-to-Outcome workflows.
 
 ## Key Layers
 - **Cognitive Layer**: Reasoner & Planner (LangGraph)
