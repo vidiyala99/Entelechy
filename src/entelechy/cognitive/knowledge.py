@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from aos.config import logger
+from entelechy.config import logger
 
 class KnowledgeInterface:
     """Interface for Semantic RAG and knowledge retrieval."""
@@ -12,7 +12,7 @@ class KnowledgeInterface:
         logger.info(f"Searching knowledge for: {query}")
         # Mocking retrieval results
         return [
-            {"id": "doc_1", "content": "Foundational knowledge about AOS architecture.", "score": 0.95},
+            {"id": "doc_1", "content": "Foundational knowledge about Entelechy architecture.", "score": 0.95},
             {"id": "doc_2", "content": "Cedar policy examples for finance bots.", "score": 0.88}
         ]
 

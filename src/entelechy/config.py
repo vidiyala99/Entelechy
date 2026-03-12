@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Optional
 
 class Settings(BaseSettings):
-    """System settings for the AOS."""
+    """System settings for the entelechy."""
     ENV: str = "development"
     LOG_LEVEL: str = "INFO"
     
@@ -27,11 +27,11 @@ def setup_logging():
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
         handlers=[
             logging.StreamHandler(),
-            logging.FileHandler("aos.log")
+            logging.FileHandler("entelechy.log")
         ]
     )
-    logger = logging.getLogger("aos")
-    logger.info(f"AOS initialized in {settings.ENV} mode")
+    logger = logging.getLogger("Entelechy")
+    logger.info(f"Entelechy initialized in {settings.ENV} mode")
     return logger
 
 logger = setup_logging()

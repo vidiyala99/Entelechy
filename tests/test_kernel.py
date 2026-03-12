@@ -1,8 +1,8 @@
 import pytest
-from aos.kernel.interfaces import TaskNode, AgentState, AgentPlan
-from aos.kernel.state_machine import AgentStateMachine, StateMachineError
-from aos.kernel.scheduler import Scheduler
-from aos.kernel.interrupts import InterruptHandler, KernelInterrupt
+from entelechy.kernel.interfaces import TaskNode, AgentState, AgentPlan
+from entelechy.kernel.state_machine import AgentStateMachine, StateMachineError
+from entelechy.kernel.scheduler import Scheduler
+from entelechy.kernel.interrupts import InterruptHandler, KernelInterrupt
 
 def test_state_machine_valid_transitions():
     task = TaskNode(id="test1", description="test task")

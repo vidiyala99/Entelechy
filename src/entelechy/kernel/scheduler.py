@@ -1,7 +1,7 @@
 from typing import List, Dict, Optional
-from aos.kernel.interfaces import TaskNode, AgentState, AgentPlan
-from aos.kernel.state_machine import AgentStateMachine
-from aos.config import logger
+from entelechy.kernel.interfaces import TaskNode, AgentState, AgentPlan
+from entelechy.kernel.state_machine import AgentStateMachine
+from entelechy.config import logger
 
 class Scheduler:
     """Orchestrates task execution according to a Directed Acyclic Graph (DAG)."""

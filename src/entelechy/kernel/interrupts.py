@@ -1,6 +1,6 @@
 from typing import Optional, Callable
-from aos.kernel.interfaces import KernelInterrupt
-from aos.config import logger, settings
+from entelechy.kernel.interfaces import KernelInterrupt
+from entelechy.config import logger, settings
 
 class InterruptHandler:
     """Handles system interrupts, HITL gates, and resource contention."""

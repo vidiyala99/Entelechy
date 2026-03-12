@@ -153,6 +153,6 @@ cython_debug/
 # VS Code
 .vscode/
 
-# AOS specifics
-aos.log
+# Entelechy specifics
+entelechy.log
 *.db

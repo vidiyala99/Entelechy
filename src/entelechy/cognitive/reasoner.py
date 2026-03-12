@@ -1,7 +1,7 @@
 from typing import List, Optional, TypedDict
 from langgraph.graph import StateGraph, END
-from aos.kernel.interfaces import AgentPlan, TaskNode
-from aos.config import logger
+from entelechy.kernel.interfaces import AgentPlan, TaskNode
+from entelechy.config import logger
 
 class ReasonerState(TypedDict):
     goal: str
@@ -10,7 +10,7 @@ class ReasonerState(TypedDict):
     status: str
 
 class Reasoner:
-    """The brain of the AOS, responsible for planning and goal decomposition."""
+    """The brain of the Entelechy, responsible for planning and goal decomposition."""
     
     def __init__(self):
         self.workflow = self._build_graph()

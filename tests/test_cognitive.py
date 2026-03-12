@@ -1,8 +1,8 @@
 import pytest
-from aos.cognitive.reasoner import Reasoner
-from aos.cognitive.context import ContextEngineer
-from aos.cognitive.knowledge import KnowledgeInterface
-from aos.kernel.interfaces import AgentPlan
+from entelechy.cognitive.reasoner import Reasoner
+from entelechy.cognitive.context import ContextEngineer
+from entelechy.cognitive.knowledge import KnowledgeInterface
+from entelechy.kernel.interfaces import AgentPlan
 
 def test_reasoner_plan_generation():
     reasoner = Reasoner()

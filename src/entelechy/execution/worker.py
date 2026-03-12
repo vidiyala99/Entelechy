@@ -1,8 +1,8 @@
 from typing import Optional
-from aos.kernel.interfaces import TaskNode, AgentState
-from aos.kernel.state_machine import AgentStateMachine
-from aos.execution.mcp_client import MCPClient
-from aos.config import logger
+from entelechy.kernel.interfaces import TaskNode, AgentState
+from entelechy.kernel.state_machine import AgentStateMachine
+from entelechy.execution.mcp_client import MCPClient
+from entelechy.config import logger
 
 class Worker:
     """Represents a worker agent that performs physical work via tools."""

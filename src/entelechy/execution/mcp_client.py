@@ -1,5 +1,5 @@
 from typing import List, Dict, Any
-from aos.config import logger
+from entelechy.config import logger
 import json
 import uuid
 

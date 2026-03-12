@@ -1,5 +1,5 @@
 from typing import Any, Dict, Optional
-from aos.config import logger
+from entelechy.config import logger
 
 class SandboxError(Exception):
     """Raised when code execution in the sandbox violates policy."""

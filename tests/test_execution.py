@@ -1,17 +1,17 @@
 import pytest
-from aos.execution.mcp_client import MCPClient
-from aos.execution.worker import Worker
-from aos.kernel.state_machine import AgentStateMachine
-from aos.execution.sandbox import SecureSandbox, SandboxError
-from aos.kernel.interfaces import TaskNode, AgentState
+from entelechy.execution.mcp_client import MCPClient
+from entelechy.execution.worker import Worker
+from entelechy.kernel.state_machine import AgentStateMachine
+from entelechy.execution.sandbox import SecureSandbox, SandboxError
+from entelechy.kernel.interfaces import TaskNode, AgentState
 
 @pytest.mark.asyncio
 async def test_mcp_client_tool_call():
     client = MCPClient("http://mock-mcp-server")
-    result = await client.call_tool("google_search", {"query": "AOS 2026"})
+    result = await client.call_tool("google_search", {"query": "Entelechy 2026"})
     
     assert result["status"] == "success"
-    assert "AOS 2026" in result["results"][0]
+    assert "Entelechy 2026" in result["results"][0]
 
 @pytest.mark.asyncio
 async def test_worker_processing():

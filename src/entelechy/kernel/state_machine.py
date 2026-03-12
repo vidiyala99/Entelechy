@@ -1,6 +1,6 @@
 from typing import Any
-from aos.config import logger
-from aos.kernel.interfaces import AgentState, TaskNode
+from entelechy.config import logger
+from entelechy.kernel.interfaces import AgentState, TaskNode
 
 class StateMachineError(Exception):
     """Raised when an invalid state transition is attempted."""

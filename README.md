@@ -1,6 +1,6 @@
-# AOS: Agentic Operating System (2026 Production Standard)
+# Entelechy: Agentic Operating System (2026 Production Standard)
 
-A production-grade AOS architecture for orchestrating Intent-to-Outcome workflows.
+A production-grade Entelechy architecture for orchestrating Intent-to-Outcome workflows.
 
 ## Key Layers
 - **Cognitive Layer**: Reasoner & Planner (LangGraph)
